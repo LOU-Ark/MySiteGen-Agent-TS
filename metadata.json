@@ -1,0 +1,5 @@
+{
+  "name": "MySiteGen-Agent-TS",
+  "description": "An AI-driven website lifecycle manager that automates identity formation, strategy, initial build, and continuous improvement using the Gemini API.",
+  "requestFramePermissions": []
+}
