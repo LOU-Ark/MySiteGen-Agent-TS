@@ -1,5 +1,6 @@
 
 export type SiteType = 'Corporate' | 'Personal';
+export type SiteTone = 'Professional' | 'Creative' | 'Minimal' | 'Vivid' | 'Brutalist';
 
 export interface Identity {
   siteName: string;
@@ -7,6 +8,7 @@ export interface Identity {
   mission: string;
   brandDescription: string;
   themeColor: string;
+  tone?: SiteTone;
 }
 
 export interface HubPage {
@@ -41,7 +43,7 @@ export interface ProjectState {
   articles: Article[];
   gtmId: string;
   adsenseId: string;
-  strategyRationale?: string; // AIがなぜこの構造を選んだかの解説
+  strategyRationale?: string; 
   status: 'idle' | 'importing' | 'analyzing_site' | 'building_identity' | 'generating_strategy' | 'generating_hubs' | 'ready' | 'creating_repo' | 'pushing_files' | 'enabling_pages' | 'tuning_design';
   githubConfig: GitHubConfig;
 }
